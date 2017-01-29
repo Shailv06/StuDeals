@@ -25,7 +25,7 @@
                     <div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
                             <li><a href="index.jsp"><i class="fa fa-home">&nbsp;</i>Home</a></li>
-                            <li class="dropdown"><a>CS Engg<i class="fa fa-angle-down"></i></a>
+                            <li class="dropdown"><a>CS Engg.<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="products.jsp?captain=CS&subcaptain=Books">Books</a></li>
                                 <li><a href="products.jsp?captain=CS&subcaptain=Tools">Tools</a></li> 
@@ -33,7 +33,7 @@
                                 <li><a href="products.jsp?captain=CS&subcaptain=Gadget">Electronic Gadget</a></li> 
                             </ul>
                             </li> 
-                            <li class="dropdown"><a>Mech Engg<i class="fa fa-angle-down"></i></a>
+                            <li class="dropdown"><a>Mech Engg.<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="products.jsp?captain=ME&subcaptain=Books">Books</a></li>
                                 <li><a href="products.jsp?captain=ME&subcaptain=Tools"">Tools</a></li> 
@@ -41,7 +41,7 @@
                                 <li><a href="products.jsp?captain=ME&subcaptain=Gadget">Electronic Gadget</a></li> 
                             </ul>
                             </li> 
-                            <li class="dropdown"><a>EC Engg<i class="fa fa-angle-down"></i></a>
+                            <li class="dropdown"><a>EC Engg.<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="products.jsp?captain=EC&subcaptain=Books">Books</a></li>
                                 <li><a href="products.jsp?captain=EC&subcaptain=Tools"">Tools</a></li> 
