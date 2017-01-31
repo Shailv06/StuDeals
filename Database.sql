@@ -208,6 +208,35 @@ INSERT INTO `products` (`productID`, `productName`, `productPrice`, `productImag
 
 -- --------------------------------------------------------
 
+
+--
+-- Table structure for table `review`
+--
+
+CREATE TABLE IF NOT EXISTS `review` (
+  `reviewID` int(255) NOT NULL AUTO_INCREMENT,
+  `reviewName` char(255) NOT NULL,
+  `reviewEmail` char(255) NOT NULL,
+  `reviewSubject` char(255) NOT NULL,
+  `reviewMessage` char(255) NOT NULL,
+  `date` char(255) NOT NULL,
+  PRIMARY KEY (`reviewID`),
+  UNIQUE KEY `reviewID` (`reviewID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `review`
+--
+
+INSERT INTO `review` (`reviewID`, `reviewName`, `reviewEmail`, `reviewSubject`, `reviewMessage`, `date`) VALUES
+(14, 'dssd', 'vshailendra2@gmail.com', 'dfsa', 'dasd', 'Tue Jan 31 22:04:09 IST 2017'),
+(13, 'sadsa', 'vshailendra2@gmail.com', 'sdaSDAAS', 'DAS', 'Tue Jan 31 22:03:06 IST 2017'),
+(12, 'sad', 'vshailendra2@gmail.com', 'dsfd', 'dsas', 'Tue Jan 31 22:02:07 IST 2017'),
+(11, 'ddf', 'vshailendra2@gmail.com', 'dfs', 'dfsdf', 'Tue Jan 31 22:00:46 IST 2017');
+
+-- --------------------------------------------------------
+
+
 --
 -- Table structure for table `user`
 --
