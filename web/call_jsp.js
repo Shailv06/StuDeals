@@ -164,3 +164,29 @@ function submitreview(){
         alert("Unable to connect to server !!");
     }
 }
+
+function contact_review(){
+    var v=getSubmitQuery(contact_form);
+    var url="contact_review.jsp"+v;
+    if(window.XMLHttpRequest){
+        request=new XMLHttpRequest(); 
+    }
+    else if(window.ActiveXObject){
+        request=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    try{
+        request.onreadystatechange=function(){
+            if(request.readyState==4){			
+//                window.setTimeout(function(){
+//                    window.location.href="contact-us.jsp";  
+//                },2000);
+                document.getElementById("contactinfo").innerHTML=request.responseText;
+            }
+        };
+        request.open("POST",url,true);
+        request.send();
+    }catch(e){
+        alert("Unable to connect to server !!");
+    }
+}

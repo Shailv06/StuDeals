@@ -10,6 +10,7 @@
         }else{
             session.setAttribute("uid",Integer.parseInt(rs.getString("userID")));
             session.setAttribute("uname",rs.getString("userName") ); 
+            session.setAttribute("uemail",rs.getString("userEmail") ); 
             Integer uid=(Integer)session.getAttribute("uid");
             String sql1="Select * from cart where userID="+uid+"";
             rs1=st1.executeQuery(sql1);

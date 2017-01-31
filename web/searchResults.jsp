@@ -38,12 +38,12 @@
 </head>
 <body>
     <%@include file="connect.jsp"%>
-        <%  String search=request.getParameter("search")+"%";
+        <%  String search=request.getParameter("search");
             int i=1,n=0,m=4;
-            String sql="SELECT count(*) as Count FROM `products` WHERE productName LIKE '"+search+"' OR productBranch LIKE '"+search+"' OR productSubCategory LIKE '"+search+"' "
-                    + "OR productDetail1 LIKE '"+search+"' OR productDetail2 LIKE '"+search+"' LIMIT 0 , 28 ";
-            String sql1="SELECT * FROM `products` WHERE productName LIKE '"+search+"' OR productBranch LIKE '"+search+"' OR productSubCategory LIKE '"+search+"' "
-                    + "OR productDetail1 LIKE '"+search+"' OR productDetail2 LIKE '"+search+"' LIMIT 0 , 28 ";
+            String sql="SELECT count(*) as Count FROM `products` WHERE productName LIKE '%"+search+"%' OR productBranch LIKE '%"+search+"%' OR productSubCategory LIKE '%"+search+"%' "
+                    + "OR productDetail1 LIKE '%"+search+"%' OR productDetail2 LIKE '%"+search+"%' LIMIT 0 , 28 ";
+            String sql1="SELECT * FROM `products` WHERE productName LIKE '%"+search+"%' OR productBranch LIKE '%"+search+"%' OR productSubCategory LIKE '%"+search+"%' "
+                    + "OR productDetail1 LIKE '%"+search+"%' OR productDetail2 LIKE '%"+search+"%' LIMIT 0 , 28 ";
             rs=st.executeQuery(sql); 
             rs.first();
             n=Integer.parseInt(rs.getString("Count"));
@@ -75,6 +75,14 @@
                         </ol>
                     </div><!--/breadcrumbs-->
                 </div>
+                <div class="row">    		
+                    <div class="col-sm-12">    			   			
+                        <h2 class="title text-center">Search Results for <strong>"<%=request.getParameter("search")%>"</strong></h2>    			    				    				
+                        <div id="gmap" class="contact-map"></div>
+                    </div>			 		
+                </div>    	
+            
+                <div><center><h2 style="color: #FE980F"></h2></center></div>
 		<div class="features_items"><!--features_items-->
                     <%  if(n==0){ %>
                     <div class="col-sm-12">

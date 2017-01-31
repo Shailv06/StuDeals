@@ -255,17 +255,17 @@ a#scrollUp i{
 .search_box input {
   background: #F0F0E9;
   border: medium none;
-  color: #B2B2B2;
+  color: #FF4518;
   font-family: 'roboto';
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   height: 35px;
   outline: medium none;
   padding-left: 10px;
-  width: 155px;
+  width: 255px;
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
-  background-position: 130px;
+  background-position: 230px;
 }
 
 
@@ -867,10 +867,9 @@ h2.title:before{
 h2.title {
   color: #FE980F;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   margin: 0 50px;
-  text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
 }

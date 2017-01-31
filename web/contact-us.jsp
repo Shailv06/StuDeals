@@ -12,7 +12,10 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <script type="text/Javascript" src="call_jsp.js"></script>
+    <script type="text/Javascript" src="ajax.js"></script>
+    <script type="text/Javascript" src="js/jquery_showPassword.js"></script>
+    	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -53,21 +56,24 @@
                         <div class="contact-form">
                                 <h2 class="title text-center">Get In Touch</h2>
                                 <div class="status alert alert-success" style="display: none"></div>
-                                <form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+                                <form id="main-contact-form" class="contact-form row" name="contact_form" method="post">
+                                    <%if(session.getAttribute("uid")==null){%>
                                     <div class="form-group col-md-6">
                                         <input type="text" name="name" class="form-control" required="required" placeholder="Name">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <input type="email" name="email" class="form-control" required="required" placeholder="Email">
                                     </div>
+                                    <%}%>
                                     <div class="form-group col-md-12">
                                         <input type="text" name="subject" class="form-control" required="required" placeholder="Subject">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your Message Here"></textarea>
                                     </div>                        
+                                    <div id="contactinfo"></div>
                                     <div class="form-group col-md-12">
-                                        <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+                                        <button type="button" onclick="contact_review()" class="btn btn-primary pull-right">Submit</button>
                                     </div>
                                 </form>
                         </div>
