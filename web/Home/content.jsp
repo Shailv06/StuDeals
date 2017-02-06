@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="features_items"><!--features_items-->
-                        <h2 class="title text-center">Features Items</h2>
+                        <h2 class="title text-center">Featured Items</h2>
                         <% while(rs1.next()){ 
                             if(i<=m){ %>
                         <div class="col-sm-3">
